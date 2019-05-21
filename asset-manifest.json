@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cedula/static/css/main.86d17136.chunk.css",
-    "main.js": "/cedula/static/js/main.fc144cfa.chunk.js",
-    "main.js.map": "/cedula/static/js/main.fc144cfa.chunk.js.map",
+    "main.js": "/cedula/static/js/main.20d7b26f.chunk.js",
+    "main.js.map": "/cedula/static/js/main.20d7b26f.chunk.js.map",
     "runtime~main.js": "/cedula/static/js/runtime~main.e6465934.js",
     "runtime~main.js.map": "/cedula/static/js/runtime~main.e6465934.js.map",
     "static/js/2.f379911b.chunk.js": "/cedula/static/js/2.f379911b.chunk.js",
     "static/js/2.f379911b.chunk.js.map": "/cedula/static/js/2.f379911b.chunk.js.map",
     "index.html": "/cedula/index.html",
-    "precache-manifest.c2181ce413391269eb22db488862498b.js": "/cedula/precache-manifest.c2181ce413391269eb22db488862498b.js",
+    "precache-manifest.68577e7d60cc5f154affc3f2d83a2e7c.js": "/cedula/precache-manifest.68577e7d60cc5f154affc3f2d83a2e7c.js",
     "service-worker.js": "/cedula/service-worker.js",
     "static/css/main.86d17136.chunk.css.map": "/cedula/static/css/main.86d17136.chunk.css.map"
   }

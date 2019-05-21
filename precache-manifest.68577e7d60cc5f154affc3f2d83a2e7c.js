@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e590a681f9b72ccea09fef7e264d6e8c",
+    "revision": "af64090b12d4d7589cefc53b3af26b52",
     "url": "/cedula/index.html"
   },
   {
-    "revision": "55626317d240557a3635",
+    "revision": "bb8ea2f6245e0cfb919b",
     "url": "/cedula/static/css/main.86d17136.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cedula/static/js/2.f379911b.chunk.js"
   },
   {
-    "revision": "55626317d240557a3635",
-    "url": "/cedula/static/js/main.fc144cfa.chunk.js"
+    "revision": "bb8ea2f6245e0cfb919b",
+    "url": "/cedula/static/js/main.20d7b26f.chunk.js"
   },
   {
     "revision": "1423d300ec2988d65a0c",

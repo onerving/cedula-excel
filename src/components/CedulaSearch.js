@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Grid, Header, Input, Search, Segment} from "semantic-ui-react";
+import {Card, Container, Grid, Header, Input, Search, Segment} from "semantic-ui-react";
 import {getLicenseInfo} from "./CedulaFinder";
 
 class CedulaSearch extends Component {
@@ -29,12 +29,13 @@ class CedulaSearch extends Component {
 
     render() {
         return (
-            <Grid.Column width={'5'} verticalAlign={'middle'}>
+            <Grid.Column computer={5} tablet={8} mobile={16} verticalAlign={'middle'}>
+                <Header>Buscador de cédulas profesionales</Header>
                 <Segment>
                     <Grid.Row>
-                        <Input value={this.state.query} onChange={this.handleChange}/>
+                        <Input type={'number'} value={this.state.query} onChange={this.handleChange}/>
                     </Grid.Row>
-                    <Grid.Row>
+                    <Grid.Row noGutters>
                         <SearchResults result={this.state.result}/>
                     </Grid.Row>
                 </Segment>
@@ -57,18 +58,24 @@ class SearchResults extends Component {
 
 
     render() {
-        if(this.state.result){
+        if(this.state.result && this.state.result.nombre !== undefined){
             const { anioRegistro, genero, id, institucion, materno, nombre, numCedula, paterno, timestamp, tipo, titulo
             } = this.state.result;
             return (
-                <Container className={'results'}>
-                    <Header as={'h3'}>Cédula profesional</Header>
-                    <p>{numCedula}</p>
-                    <p>{`${paterno} ${materno} ${nombre}`}</p>
-                    <p>{titulo}</p>
-                    <p>{institucion}</p>
-                    <p>{anioRegistro}</p>
-                </Container>
+                <Card centered className={'results'}>
+                    <Card.Content>
+                        <Card.Header>{numCedula}</Card.Header>
+                        <Card.Meta>Cédula profesional </Card.Meta>
+                    </Card.Content>
+                    <Card.Content>
+                        <Card.Description>
+                            <p>{`${paterno} ${materno} ${nombre}`}</p>
+                            <p>{titulo}</p>
+                            <p>{institucion}</p>
+                            <p>{anioRegistro}</p>
+                        </Card.Description>
+                    </Card.Content>
+                </Card>
             );
         }else{
             return (

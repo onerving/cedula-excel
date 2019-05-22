@@ -1,13 +1,17 @@
 const axios = require('axios/index');
 
 export function makeServerQuery(license){
-    return axios.get("/search", {
+    const proxy = 'https://cors-anywhere.herokuapp.com/';
+    const url = "http://search.sep.gob.mx/solr/cedulasCore/select?'";
+
+    return axios.get(proxy+url, {
         params:{
             fl:'*,score',
             rows: 1,
             wt: 'json',
             q: license,
-        }
+        },
+        crossDomain: true,
     });
 }
 

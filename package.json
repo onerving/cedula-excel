@@ -2,7 +2,7 @@
   "name": "cedula",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://onerving.github.io/cedula",
+  "homepage": "https://onerving.github.io/cedula-excel",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",

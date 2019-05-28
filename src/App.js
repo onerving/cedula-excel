@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import {Grid} from "semantic-ui-react";
 import CedulaSearch from "./components/CedulaSearch";
+import {Container} from "reactstrap";
 
 
 function App() {
     return (
-        <Grid centered className={'App'}>
+        <Container fluid className={'App d-flex justify-items-center align-items-center'}>
             <CedulaSearch />
-        </Grid>
+        </Container>
     );
 }
 

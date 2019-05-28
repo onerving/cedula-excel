@@ -2,6 +2,8 @@
   text-align: center;
   height: 100vh;
   background: #f2f2f2;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 500;
 }
 
 .App-logo {
@@ -35,4 +37,19 @@
 }
 .results{
   margin: 30px !important;
+}
+.dropzone{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  outline: none;
+  transition: border .24s ease-in-out;
 }

@@ -4,6 +4,7 @@ import BasicDropzone from "./BasicDropzone";
 import {Button, Card, CardBody, CardTitle, Col, Container, Form, FormGroup, Input, Row, Spinner} from 'reactstrap';
 import XLSX from 'xlsx';
 import Label from "reactstrap/es/Label";
+import CardSubtitle from "reactstrap/es/CardSubtitle";
 
 class CedulaSearch extends Component {
     state = {
@@ -155,6 +156,11 @@ function FirstStepCard (props) {
                 <CardTitle>
                     <h4>Paso 1: Sube tu archivo de Excel</h4>
                 </CardTitle>
+                <CardSubtitle>
+                    La primera hoja de trabajo debe de tener las cédulas que quieres verificar.
+                    <br/>
+                    Se creará una copia de la primera hoja y se le añadirán los resultados de tu consulta.
+                </CardSubtitle>
                 <BasicDropzone
                     onDropAccepted={props.onExcelUploaded}
                 />

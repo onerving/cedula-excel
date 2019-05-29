@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3894a0-b72e-4883-b6d3-73a8474c2560" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasicDropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicDropzone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CedulaSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CedulaSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CedulaSearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="92">
+              <caret line="159" column="95" selection-start-line="159" selection-start-column="95" selection-end-line="159" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -147,7 +141,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.14.0" />
-    <property name="js.last.introduce.type" value="VAR" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/resources/diccionarios/spanish.dic" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -215,7 +209,7 @@
       <workItem from="1558974371249" duration="19943000" />
       <workItem from="1559058720851" duration="1794000" />
       <workItem from="1559147236969" duration="612000" />
-      <workItem from="1559147950701" duration="8239000" />
+      <workItem from="1559147950701" duration="11005000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1558461885116</created>
@@ -245,11 +239,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559001636164</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adds excel manipulation. Fully functional by now.">
+      <created>1559156229857</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559156229857</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adds polish on the UX.">
+      <created>1559164401120</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559164401121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54963000" />
+    <option name="totallyTimeSpent" value="57729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,20 +272,20 @@
     <frame x="0" y="0" width="1366" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32767403" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32767403" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298969" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32597622" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293718" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32597622" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Quokka" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
@@ -296,7 +304,9 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Implements search for professional licenses in México." />
     <MESSAGE value="Adds basic layout and excel parsing. DOES NOT do anything with the excel yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds basic layout and excel parsing. DOES NOT do anything with the excel yet." />
+    <MESSAGE value="Adds excel manipulation. Fully functional by now." />
+    <MESSAGE value="Adds polish on the UX." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds polish on the UX." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
@@ -393,11 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CedulaSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="159" column="95" selection-start-line="159" selection-start-column="95" selection-end-line="159" selection-end-column="95" />
         </state>
       </provider>
     </entry>

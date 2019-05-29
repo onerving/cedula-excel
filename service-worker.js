@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cedula-excel/precache-manifest.8442f67b9f3ed09140baad9f04b499aa.js"
+  "/cedula-excel/precache-manifest.6e7e4c9b286258b0930e5b559b50d166.js"
 );
 
 self.addEventListener('message', (event) => {

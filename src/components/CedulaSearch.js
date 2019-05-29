@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {getLicenseInfo} from "./CedulaFinder";
 import BasicDropzone from "./BasicDropzone";
-import {Button, Card, CardBody, CardTitle, Col, Container, Form, FormGroup, Input, Row} from 'reactstrap';
+import {Button, Card, CardBody, CardTitle, Col, Container, Form, FormGroup, Input, Row, Spinner} from 'reactstrap';
 import XLSX from 'xlsx';
 import Label from "reactstrap/es/Label";
 
@@ -11,19 +11,11 @@ class CedulaSearch extends Component {
         result: {},
         columns: [],
         worksheet: null,
-    };
-
-    searchAndSetResults = (query) =>{
-        getLicenseInfo(query).then( info => {
-                console.log(info);
-                this.setState({result: info});
-            }
-        );
+        validationState: false,
     };
 
     handleInputChange = (e) => {
         let {name, value} = e.target;
-        console.log(name + ' ' + value);
         this.setState({
             [name] : value
         })
@@ -52,6 +44,7 @@ class CedulaSearch extends Component {
 
     validateLicenses = (event) => {
         event.preventDefault();
+        this.setState({validationState: true});
         const {worksheet, licenseCol, validationCol, validMark, invalidMark} = this.state;
         const results = worksheet.map(async (item, index) => {
             if (index === 0) return item;
@@ -65,11 +58,27 @@ class CedulaSearch extends Component {
             const workbook = this.state.workbook;
             XLSX.utils.book_append_sheet(workbook, sheet, "cédulas validadas");
             XLSX.writeFile(workbook, 'editado.xlsx');
+            this.setState({validationState: false});
             }
         );
     };
 
     render() {
+        const {licenseCol, validationCol, validMark, invalidMark} = this.state;
+        const requirements = (licenseCol && validationCol && validMark && invalidMark);
+        const button = <Button
+            color={'primary'}
+            type={'submit'}
+            disabled={!requirements}
+            onClick={this.validateLicenses}
+        >Verificar cédulas</Button>;
+        const spinner = <React.Fragment>
+            <Spinner type={'grow'} color={'primary'}/>
+            <p>Verificando. Esto puede tardar unos segundos.</p>
+        </React.Fragment>;
+        const submitArea =  (!this.state.validationState) ? button
+            :
+            spinner;
         const secondStepCard = (!this.state.worksheet) ? null :
             <Card>
                 <CardBody>
@@ -122,10 +131,7 @@ class CedulaSearch extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <Button
-                                    type={'submit'}
-                                    onClick={this.validateLicenses}
-                                >Verificar cédulas</Button>
+                                {submitArea}
                             </Col>
                         </Row>
                     </Form>

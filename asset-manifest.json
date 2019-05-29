@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cedula-excel/static/css/main.e15ab0ba.chunk.css",
-    "main.js": "/cedula-excel/static/js/main.12099b1c.chunk.js",
-    "main.js.map": "/cedula-excel/static/js/main.12099b1c.chunk.js.map",
+    "main.css": "/cedula-excel/static/css/main.e3f58e20.chunk.css",
+    "main.js": "/cedula-excel/static/js/main.3ddfc839.chunk.js",
+    "main.js.map": "/cedula-excel/static/js/main.3ddfc839.chunk.js.map",
     "runtime~main.js": "/cedula-excel/static/js/runtime~main.9c88d933.js",
     "runtime~main.js.map": "/cedula-excel/static/js/runtime~main.9c88d933.js.map",
     "static/css/2.266e55a5.chunk.css": "/cedula-excel/static/css/2.266e55a5.chunk.css",
-    "static/js/2.de28f4b4.chunk.js": "/cedula-excel/static/js/2.de28f4b4.chunk.js",
-    "static/js/2.de28f4b4.chunk.js.map": "/cedula-excel/static/js/2.de28f4b4.chunk.js.map",
+    "static/js/2.0fa6dff9.chunk.js": "/cedula-excel/static/js/2.0fa6dff9.chunk.js",
+    "static/js/2.0fa6dff9.chunk.js.map": "/cedula-excel/static/js/2.0fa6dff9.chunk.js.map",
     "index.html": "/cedula-excel/index.html",
-    "precache-manifest.6e7e4c9b286258b0930e5b559b50d166.js": "/cedula-excel/precache-manifest.6e7e4c9b286258b0930e5b559b50d166.js",
+    "precache-manifest.bfb08113a48b3cdde73292a5b19348e8.js": "/cedula-excel/precache-manifest.bfb08113a48b3cdde73292a5b19348e8.js",
     "service-worker.js": "/cedula-excel/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/cedula-excel/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.e15ab0ba.chunk.css.map": "/cedula-excel/static/css/main.e15ab0ba.chunk.css.map"
+    "static/css/main.e3f58e20.chunk.css.map": "/cedula-excel/static/css/main.e3f58e20.chunk.css.map"
   }
 }

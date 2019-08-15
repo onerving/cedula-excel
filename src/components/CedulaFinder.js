@@ -17,6 +17,7 @@ export function makeServerQuery(license){
 
 export function getLicenseInfo(license){
     return makeServerQuery(license).then(res => {
+        console.log(res);
         return res.data.response.docs[0];
     });
 }

@@ -51,7 +51,15 @@ class CedulaSearch extends Component {
             if (index === 0) return item;
             const license = item[licenseCol];
             const info =  await getLicenseInfo(license);
-            item[validationCol] = (info && license === parseInt(info['numCedula'])) ? validMark : invalidMark;
+            console.log(license);
+            console.log(typeof license);
+            if(info && info.numCedula){
+                const stringLicense = license.toString();
+                const doTheyMatch = (stringLicense.localeCompare(info.numCedula) === 0);
+                item[validationCol] = (doTheyMatch) ? validMark : invalidMark;
+                return item;
+            }
+            item[validationCol] = invalidMark;
             return item;
         });
         Promise.all(results).then(completed =>{
